@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+
+
+@font-face {
+    font-family: "Ajay Sans";
+    src: url("../assets/fonts/RoobertTRIAL-Medium.woff2") format("woff2"),
+         url("../assets/fonts/RoobertTRIAL-Medium.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ajay Sans";
+    src: url("../assets/fonts/RoobertTRIAL-Regular.woff2") format("woff2"),
+        url("../assets/fonts/RoobertTRIAL-Regular.woff") format("woof");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sai Sans";
+    src: url("../assets/fonts/Numbers-Deuce-TD.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Ajay Sans', 'figtree', 'sans-serif';
+    font-feature-settings: 'ss02' on, 'ss06' on, 'ss11' on;
+    -webkit-font-smoothing: antialiased;
+}

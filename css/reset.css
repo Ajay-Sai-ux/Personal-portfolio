@@ -1,0 +1,38 @@
+
+
+/* Reset
+----------------------------------------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1, h2, h3, p, figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  user-select: none;
+}
+
+* {
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+

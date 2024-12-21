@@ -1,0 +1,66 @@
+.section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 20px;
+    padding: 0 40px;
+}
+
+/* Section Header
+----------------------------------------------------------------------------- */
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+.header .logo .text{
+    font-family: Sai Sans;
+    font-size: 40px;
+    line-height: 100%;
+    padding: 32px 0;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+}
+
+
+
+/* Section intro
+----------------------------------------------------------------------------- */
+.intro .content {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    padding: 140px 0 140px 0;
+    grid-column: 3 / -1;
+
+}
+
+.intro .options {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 3 / -1;
+    overflow: scroll;
+}
+
+.intro .option {
+    display: flex;
+    white-space: nowrap;
+    padding: 12px 10px;
+    font-weight: 600;
+}
+
+.intro .options .option:first-child {
+    padding-left: 0;
+}
+
+.intro .texts {
+    display: grid;
+    grid-column: 1 / -1;
+}
+
+.intro .texts .text {
+    font-size: clamp(36px, 6.35vw, 6.35vw);
+    font-weight: 600;
+    margin: -0.07em;
+    line-height: 110%;
+    text-indent: 20%;
+}
