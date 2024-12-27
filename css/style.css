@@ -28,8 +28,8 @@
 .intro .content {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 20px;
-    padding: 140px 0 140px 0;
+    gap: 0 20px;
+    padding: 210px 0 80px 0;
     grid-column: 3 / -1;
 
 }
@@ -39,13 +39,19 @@
     justify-content: flex-start;
     grid-column: 3 / -1;
     overflow: scroll;
+    scrollbar-width: none;
 }
 
-.intro .option {
+.intro .options .option {
     display: flex;
     white-space: nowrap;
     padding: 12px 10px;
     font-weight: 600;
+    opacity: 0.3;
+}
+
+.intro .options .is--active{
+    opacity: 1;
 }
 
 .intro .options .option:first-child {
@@ -54,13 +60,22 @@
 
 .intro .texts {
     display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
     grid-column: 1 / -1;
 }
 
 .intro .texts .text {
-    font-size: clamp(36px, 6.35vw, 6.35vw);
+    display: none;
+    grid-column: 1/-2;
+    font-size: clamp(36px, 5.14vw, 5.14vw);
     font-weight: 600;
-    margin: -0.07em;
     line-height: 110%;
-    text-indent: 20%;
+    text-indent: calc(((100% - (8 * 20px)) / 9 * 2 + 40px) - 0.02em);
+    /* calc(((100% - (no of gap * gap wigth)) / no of column * starting column + required gap) - 0.02em) */
+    margin: 0 0 0 -0.07em;
+}
+
+.intro .texts .is--visible{
+    display: block;
 }
