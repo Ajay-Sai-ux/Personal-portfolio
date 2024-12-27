@@ -6,11 +6,11 @@
     }
 
     .intro .content {
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-column: 1 / -1;
     }
     .intro .options {
-        grid-column: 3 / -1;
+        grid-column: 2 / -1;
     }
     .intro .texts .text {
         grid-column: 1 / -1;
