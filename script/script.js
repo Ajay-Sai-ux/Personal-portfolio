@@ -1,4 +1,5 @@
 // JavaScript to handle tab switching
+
 document.addEventListener("DOMContentLoaded", () => {
     const options = document.querySelectorAll(".option");
     const texts = document.querySelectorAll(".text");
