@@ -48,6 +48,8 @@
     padding: 12px 10px;
     font-weight: 600;
     opacity: 0.3;
+    cursor: pointer;
+    user-select: none;
 }
 
 .intro .options .is--active{
@@ -76,6 +78,6 @@
     margin: 0 0 0 -0.07em;
 }
 
-.intro .texts .is--visible{
+.intro .text.is--visible{
     display: block;
 }
