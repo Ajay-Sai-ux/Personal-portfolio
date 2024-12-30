@@ -1,3 +1,9 @@
+::selection {
+    background-color: black;
+    color: white;
+}
+
+
 .section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -5,11 +11,13 @@
     padding: 0 40px;
 }
 
+
 /* Section Header
 ----------------------------------------------------------------------------- */
 .header {
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 .header .logo .text{
@@ -19,6 +27,7 @@
     padding: 32px 0;
     -webkit-font-smoothing: antialiased;
     font-weight: 500;
+    mix-blend-mode: difference;
 }
 
 
@@ -88,11 +97,8 @@
 }
 
 
-/* Section intro
+/* Section work
 ----------------------------------------------------------------------------- */
-.work .content {
-    grid: inherit;
-}
 
 .work .content .image {
     user-select: none;
@@ -101,26 +107,70 @@
 
 .work .content {
     display: inherit;
+    grid-template-columns: repeat(9, 1fr);
+    grid-column: 3 / -2;
     gap: 20px;
-    grid-column: 1 / -1;
-    user-select: none;
     width: 100%;
-}
-
-.work .content .image:first-child {
-    grid-column: 5 / -1;
-}
-.work .content .image:nth-child(2) {
-    grid-column: 2 / -9;
-}
-.work .content .image:nth-child(3) {
-    grid-column: 5 / -6;
-}
-.work .content .image:nth-child(4) {
-    grid-column: 8 / -3;
-}
-.work .content .image:nth-child(5) {
-    grid-column: 8 / -1;
+    padding: 200px 0;
+    align-items: baseline;
 }
 
 
+.work .content .sub-header {
+    grid-column: 3 / 6;
+}
+
+.work .content .sub-header h2 {
+    font-size: clamp(36px, 4.14vw, 4.14vw);
+    font-weight: 600;
+    line-height: 110%;
+    margin: 0 0 0 -0.07em;
+}
+
+.work .content .sub-header .options {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.work .content .sub-header .options .option {
+    display: flex;
+    white-space: nowrap;
+    padding: 12px 10px;
+    font-weight: 600;
+    opacity: 0.3;
+    cursor: pointer;
+    user-select: none;
+}
+
+.work .content .sub-header .options .option:first-child {
+    padding-left: 0;
+}
+
+.work .content .discription {
+    font-size: 24px;
+    padding-bottom: 160px;
+    grid-column: 3 / 5;
+    
+}
+
+.work .content .overlay-image {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    pointer-events: none;
+    user-select: none;
+}
+
+.work .content figcaption {
+    font-size: 16px;
+}
+
+
+.work .content figure {
+    grid-column: span 2;
+}
+
+.work .content > :nth-child(3) {
+    grid-column: 3 / 5;
+}
